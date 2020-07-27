@@ -1,0 +1,273 @@
+/* ---------------------------------------- FORMULARIO - checked -------------------------------------------- */
+
+.card-body {
+    background-color: #fff !important;
+}
+
+.card-footer-form {
+    background: #fff;
+}
+
+body {
+    padding-bottom: 0px;
+}
+
+.note-editor.note-frame {
+    border: none !important;
+    pointer-events: none !important;
+}
+
+textarea {
+    resize: none;
+    cursor: none;
+}
+
+INPUT[type=checkbox]:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+INPUT[type=checkbox] {
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+
+INPUT[type=checkbox]:checked {
+    background-color: #409fd6;
+    background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 5px 5px no-repeat;
+}
+
+input[type="checkbox"]:hover {
+    filter: brightness(90%);
+}
+
+input[type="checkbox"]:disabled {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+input[type="checkbox"]:after {
+    content: '';
+    position: relative;
+    left: 40%;
+    top: 20%;
+    width: 15%;
+    height: 40%;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[type="checkbox"]:disabled:after {
+    border-color: #7b7b7b;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#tabela-palestra {
+    font-size: larger;
+}
+
+.caixa-map {
+    padding: 30px 0px;
+}
+
+
+/* ---------------------------------------- IMAGEM -------------------------------------------- */
+
+.img-fundo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    margin-top: 4px;
+}
+
+.img-banner {
+    width: 900px;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    background: #000;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -70;
+    margin: auto;
+    /*margin-bottom: 210px;*/
+    -webkit-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+}
+
+
+/* ---------------------------------------- resposividade -------------------------------------------- */
+
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+
+@media (max-width: 906px) {
+    .img-banner {
+        display: block !important;
+        width: 100% !important;
+        height: 280 !important;
+        max-height: none !important;
+        border-style: none !important;
+        border-radius: 0px !important;
+        bottom: 40 !important;
+        margin-top: 165px !important;
+    }
+    .img-fundo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        filter: blur(8px);
+        margin-top: 4px;
+    }
+}
+
+
+/*
+@media (max-width: 416px) {
+    .img-banner {
+        width: 313px;
+        height: 215px;
+        text-align: center;
+        border-radius: 15px;
+        background: #000;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 200;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .img-fundo {
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        filter: blur(8px);
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 417px) and (max-width: 490.98px) {
+    .img-banner {
+        width: 405px;
+        height: 230px;
+        text-align: center;
+        border-radius: 15px;
+        background: #000;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 190;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+    }
+    .img-fundo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        filter: blur(8px);
+        margin-top: 4px;
+    }
+}
+
+*/
+
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+
+
+/*
+@media(min-width: 490px) and (max-width: 678.98px) {
+    .img-banner {
+        width: 470px !important;
+        height: 290px;
+        text-align: center;
+        border-radius: 15px;
+        background: #000;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 190;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+    }
+    .img-fundo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 490px;
+        filter: blur(8px);
+        margin-top: 4px;
+        background: url('/storage/{{$exibir->url_imagem}}') no-repeat;
+    }
+}
+*/
+
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+
+
+/*
+@media(min-width: 679px) and (max-width: 991.98px) {
+    .img-banner {
+        width: 670px;
+        height: 335px;
+        text-align: center;
+        border-radius: 15px;
+        background: #000;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 130px;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+    }
+    .img-fundo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 575px;
+        filter: blur(8px);
+        margin-top: 4px;
+    }
+} */
